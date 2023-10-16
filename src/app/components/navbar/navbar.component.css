@@ -1,0 +1,20 @@
+.btn btn-primary {
+  column-gap: normal;
+}
+.example-container {
+  width: 60px;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: top;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+  
+}

@@ -1,0 +1,14 @@
+<h1 class="titulo">Lista de alumnos</h1>
+<div class="d-flex flex-nowrap">
+<div class="card" style="width: 18rem;" *ngFor="let alumno of alumnos">
+    <div class="card-body">
+        <h5 class="card-title">{{ alumno.nombre  }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Edad: {{ alumno.edad }}</h6>
+        <p class="card-text">
+            <span *ngIf="alumno.curso.length > 0">Cursos inscripto {{ alumno.curso }}</span>
+            <span *ngIf="alumno.curso.length === 0">Sin cursos inscritos</span>
+        </p>
+        <a href="#" class="card-link">{{ alumno.aprobado ? 'aprobado' : 'reprobado' }}</a>
+    </div>
+</div>
+</div>
